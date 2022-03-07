@@ -1,0 +1,144 @@
+/* CSS stylesheet2 */
+
+.cart-main {
+    margin: 20px auto;
+    width: 70%;
+}
+
+.label {
+    margin-bottom: 10px;
+}
+
+#forms {
+    text-align: center;
+}
+
+.form-fields-default {
+    margin: 0px 40px;
+    text-align: left;
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+    .form-fields-default > div input[type="text"] {
+        display: block;
+        margin: 10px 10px 10px 7em;
+        font-size: 1.3rem;
+        padding: 2px;
+    }
+
+    .form-fields-default > div label {
+        position: absolute;
+        display: block;
+    }
+
+    .form-fields-default > #input-billing-data label[for="same"] {
+        display: inline-block;
+        margin-left: .3em;
+        vertical-align: middle;
+    }
+
+    .form-fields-default > #input-billing-data label[for="first_name"] {
+        margin-top: 8px;
+    }
+
+    .form-fields-default > #input-billing-data input[type="text"], .form-fields-default > #input-billing-data input[type="date"] {
+        display: block;
+        margin: 10px 10px 10px 10em;
+        font-size: 1.3rem;
+        padding: 2px;
+    }
+
+    .form-fields-default > #input-billing-data input[type="submit"] {
+        width: 100%;
+    }
+  
+
+/* Table Class */
+.table-main {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.table-main th {
+    padding: 15px;
+    color: white;
+    background-color: #353148;
+    text-align: left;
+}
+
+    .table-main th:first-child {
+        border-top-left-radius: 10px;
+    }
+
+    .table-main th:last-child {
+        border-top-right-radius: 10px;
+    }
+
+.table-main tbody tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+.table-main tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+    .table-main tbody tr td p  {
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+    }
+
+    .table-main tbody tr td div {
+        text-align: right;
+        display: inline-block;
+        width: 49%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .table-main tbody tr:last-child > td:first-child {
+        border-bottom-left-radius: 10px;
+    }
+
+    .table-main tbody tr:last-child > td:last-child {
+        border-bottom-right-radius: 10px;
+    }
+
+.table-main td {
+    padding: 15px;
+    text-align: left;
+}
+
+/* Button Class */
+.btn {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-del {
+    margin-left: 20px;
+}
+
+.btn-default {
+    background-color: #353148;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .btn-default:hover {
+        background-color: #575175;
+        cursor: pointer;
+    }
+.btn-margin {
+    margin: 20px 0px;
+}
+
