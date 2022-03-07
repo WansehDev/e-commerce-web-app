@@ -128,12 +128,12 @@ img {
     }
 
 
-#products {
+.products {
     text-align: center;
     padding-bottom: 10px;
 }
 
-#products > div > img {
+.products > div > img {
     width: 190px;
     height: 190px;
     display: block;
@@ -168,17 +168,35 @@ img {
     vertical-align: middle;
 }
 
-.image p {
-    padding: 20px;
-}
+    .image p {
+        padding: 20px;
+    }
 
-.image span{
-    display: block;
-    margin-top: 2px;
-    color: rgb(151, 151, 151);
+    .image span{
+        display: block;
+        margin-top: 2px;
+        color: rgb(151, 151, 151);
+    }
 
-  
-}
+    .image .main-img {
+        width: 100%;
+        height: 400px;
+        display: block;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .extra-images {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin: 10px 2px;
+        transition: transform 0.2s;
+    }
+
+    .extra-images:hover {
+        transform: scale(1.1);
+    }
     
 
 .btn-img {
@@ -198,17 +216,21 @@ img {
     cursor: pointer;
 }
 
-
 .align {
     vertical-align: middle;
 } 
+
+
+.middle-text-container {
+    text-align: middle;
+}
 
 .shadow {
     box-shadow: 0 0 0px 2px rgba(0,0,0,.05),0 4px 6px 0 rgba(0,0,0,.1),0 8px 24px 0 rgba(0,0,0, .1);
 }
 
-
 /* Text Sizes */
+
 .text-x-sm {
     font-size: 0.6em;
 }
@@ -228,6 +250,39 @@ img {
 .text-x-lg {
     font-size: 2rem;
 }
+
+.text-letter-space {
+    letter-spacing: 1px;
+}
+
+
+/* Item CSS */
+#buy-form {
+    margin: 20px 0px 0px 0px
+}
+
+    #buy-form > button {
+        width: 150px;
+        background-color: black;
+        border-radius: 4px;
+        border: none;
+        color: rgb(185, 185, 185);
+        text-transform: uppercase;
+        transition: transform 0.2s;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    #buy-form > button:hover {
+      transform: scale(1.1);
+      color: white;
+      cursor: pointer;
+    }
+
+
+    #buy-form > select {
+        width: 200px;
+    }
 
 
 
