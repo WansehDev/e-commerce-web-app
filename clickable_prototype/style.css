@@ -290,14 +290,14 @@ img {
 
     #buy-form > button {
         width: 150px;
-        background-color: black;
+        background-color: #353148;
         border-radius: 4px;
         border: none;
         color: rgb(185, 185, 185);
         text-transform: uppercase;
         transition: transform 0.2s;
         margin-right: 10px;
-        font-weight: bold;
+  
     }
 
     #buy-form > button:hover {
