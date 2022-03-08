@@ -21,14 +21,14 @@
     vertical-align: top;
 }
 
-    .form-fields-default > div input[type="text"] {
+    .form-fields-default input[type="text"],.form-fields-default input[type="email"], .form-fields-default input[type="password"] {
         display: block;
         margin: 10px 10px 10px 7em;
         font-size: 1.3rem;
         padding: 2px;
     }
 
-    .form-fields-default > div label {
+    .form-fields-default label {
         position: absolute;
         display: block;
     }
@@ -39,7 +39,7 @@
         vertical-align: middle;
     }
 
-    .form-fields-default > #input-billing-data label[for="first_name"] {
+    .form-fields-default label[for="first_name"] {
         margin-top: 8px;
     }
 
@@ -50,8 +50,12 @@
         padding: 2px;
     }
 
-    .form-fields-default > #input-billing-data input[type="submit"] {
+    .form-fields-default input[type="submit"] {
         width: 100%;
+    }
+
+    .form-fields-default > label {
+        display: inline-block;
     }
   
 
@@ -67,7 +71,7 @@
 .table-main th {
     padding: 15px;
     color: white;
-    background-color: #353148;
+    background-color: black;
     text-align: left;
 }
 
@@ -125,7 +129,7 @@
 }
 
 .btn-default {
-    background-color: #353148;
+    background-color: black;
     color: white;
     border-radius: 10px;
     padding: 10px;
@@ -141,4 +145,20 @@
 .btn-margin {
     margin: 20px 0px;
 }
+
+/* Alignment Class */
+.align-right {
+    text-align: right;
+}
+
+.container-login {
+    position: absolute;
+    left: 50%;
+    top: 34%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    height: 230px;
+}
+
+
 
