@@ -9,6 +9,10 @@
     margin-bottom: 10px;
 }
 
+.label-2x {
+    margin-bottom: 1.5rem;
+}
+
 #forms {
     text-align: center;
 }
@@ -145,6 +149,21 @@
 .btn-margin {
     margin: 20px 0px;
 }
+
+.btn-update:hover {
+    background-color: lightcoral;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: lightgreen;
+    color: black;
+    cursor: pointer;
+}
+
+
+
 
 /* Alignment Class */
 .align-right {

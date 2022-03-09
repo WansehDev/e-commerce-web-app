@@ -48,63 +48,55 @@
           ><input type="search" placeholder="Search"
         /></i>
         <div class="align-right">
-          <select class="select-default align" name="order">
-            <option value="show">Show All</option>
-            <option value="oip">Order in Process</option>
-            <option value="shipped">Shipped</option>
-            <option value="cancel">Cancelled</option>
-          </select>
+            <button class="btn btn-default text-md" formaction="add">Add New Product</button>
         </div>
       </form>
-      <div id="order">
+      <div id="admin-products">
         <table class="table-main shadow">
           <thead class="text-md text-letter-space">
             <tr>
-              <th>Order ID</th>
+              <th>Picture</th>
+              <th>ID</th>
               <th>Name</th>
-              <th>Date</th>
-              <th>Billing Address</th>
-              <th>Total</th>
-              <th>Status</th>
+              <th>Inventory Count</th>
+              <th>Quantity Sold</th>
+              <th>Action</th>
             </tr>
           </thead>
-          <tbody class="text-lg">
+          <tbody class="text-md">
             <tr>
-              <td><a href="#">1</a></td>
-              <td>John</td>
-              <td>9/6/2014</td>
-              <td>123 dojo way Bellevue WA 98005</td>
-              <td>$149.99</td>
-              <td class="status"><select class="select-default" name="status">
-                <option value="orderin">Order In</option>
-                <option value="cancelled">Cancelled</option>
-              </select>
-            </td>
+              <td class="middle-text-container"><img class="shadow" src="sample.jpeg" alt=""></td>
+              <td>1</td>
+              <td>Tshirt</td>
+              <td>123</td>
+              <td>1000</td>
+              <td class="action">
+                <a class="btn btn-default btn-update" href="edit.html">Update</a>
+                <a class="btn btn-default btn-delete">Delete</a>
+             </td>
             </tr>
             <tr>
-              <td><a href="#">1</a></td>
-              <td>John</td>
-              <td>9/6/2014</td>
-              <td>123 dojo way Bellevue WA 98005</td>
-              <td>$149.99</td>
-              <td class="status"><select class="select-default" name="status">
-                <option value="orderin">Order In</option>
-                <option value="cancelled">Cancelled</option>
-              </select>
-            </td>
-            </tr>
-            <tr>
-              <td><a href="#">1</a></td>
-              <td>John</td>
-              <td>9/6/2014</td>
-              <td>123 dojo way Bellevue WA 98005</td>
-              <td>$149.99</td>
-              <td class="status"><select class="select-default" name="status">
-                <option value="orderin">Order In</option>
-                <option value="cancelled">Cancelled</option>
-              </select>
-            </td>
-            </tr>
+                <td class="middle-text-container"><img class="shadow" src="sample.jpeg" alt=""></td>
+                <td>1</td>
+                <td>Tshirt</td>
+                <td>123</td>
+                <td>1000</td>
+                <td class="action">
+                  <a class="btn btn-default btn-update">Update</a>
+                  <a class="btn btn-default btn-delete">Delete</a>
+               </td>
+              </tr>
+              <tr>
+                <td class="middle-text-container"><img class="shadow" src="sample.jpeg" alt=""></td>
+                <td>1</td>
+                <td>Tshirt</td>
+                <td>123</td>
+                <td>1000</td>
+                <td class="action">
+                  <a class="btn btn-default btn-update">Update</a>
+                  <a class="btn btn-default btn-delete">Delete</a>
+               </td>
+              </tr>
           </tbody>
         </table>
         <div class="pagination align text-lg">
