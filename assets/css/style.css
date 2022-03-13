@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+/* css reseto and default font */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url("../img/sample2.jpg");
+}
+
+img {
+    vertical-align: top;
+}
+
+.nav-container {
+    position: sticky;
+    top: 0;
+    min-width: 500px;
+    padding: 20px 30px;
+}
+
+    .nav-container h1 {
+        letter-spacing: .3px;
+        display: inline-block;
+        width: 200px;
+        vertical-align: middle;
+        color: white;
+    }
+
+.container-flex-right-200 {
+    display: inline-block;
+    width: calc(100% - 210px);
+    text-align: right;
+    vertical-align: middle;
+}
+
+    .container-flex-right-200 > #cart {
+        color: white;
+        text-decoration: none;
+    }
+
+.bg-gray {
+    background-color: gray;
+}
+
+.container-main {
+    min-width: 500px;
+    padding: 20px;
+}
+
+.container-box, .container-box-main {
+    display: inline-block;
+    padding: 15px 10px 0px 15px;
+    vertical-align: top;
+    border-radius: 10px;
+    margin: 0px 20px;
+}
+
+    .container-box > form {
+        margin-bottom: 20px;
+    }
+
+    .container-box input[type='search'] {
+        padding: 8px;
+    }
+
+    .container-box input[type='search']:focus {
+        outline: none;
+    }
+
+    .container-box > form > a {
+        font-size: 1.3rem;
+        display: block;
+        text-decoration: none;
+        color: black;
+        margin: 10px 0px 0px 20px;
+        transition: transform 0.2s;
+
+    }
+
+        .container-box a:hover{
+            font-weight: bold;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+    .container-box > form > a > span{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: inline-block;
+        background-color: black;
+        color: white;
+        padding: 2px;
+        width: 40px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 20px;
+    }
+
+.container-box-main {
+   width: 70%;
+}
+
+    .container-box-main > #container-box-main-header > h2{
+        display: inline-block;
+        width: 20%;
+    }
+
+    .container-box-main > #container-box-main-header > div {
+        display: inline-block;
+        width: 78%;
+        text-align: right;
+    }
+
+    .container-box-main a, .container-box-main p{
+        display: inline-block;
+    }
+
+    .container-box-main > div > form {
+        width: 100%;
+        text-align: right;
+    }
+
+    .container-box-main > div > form > label {
+        margin-right: 20px
+    }
+
+
+.products {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+    .products > div > img {
+        width: 190px;
+        height: 190px;
+        display: block;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .products > div > p > a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .products > div > p > a:hover {
+        text-decoration: underline;
+        color: black;
+    }
+
+.image {
+    background-color: white;
+    position:relative;
+    display:inline-block;
+    margin:15px;
+    border-radius: 12px;
+    transition: transform 0.2s;
+    text-align: left;
+}
+
+    .image:hover {
+        transform: scale(1.1);
+    }
+
+.overlay {
+    display:none;
+}
+
+.image .overlay {
+    width: 100%;
+    height: 35px;
+    background:rgba(0,0,0,.3);
+    position:absolute;
+    top: 155px;
+    left:0;
+    display:inline-block;
+    text-align:center;
+    color:white;
+    font-size:23px;
+    vertical-align: middle;
+}
+
+    .image p {
+        padding: 20px;
+    }
+
+    .image span{
+        display: block;
+        margin-top: 2px;
+        color: rgb(151, 151, 151);
+    }
+
+    .image .main-img {
+        width: 100%;
+        height: 400px;
+        display: block;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .extra-images {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin: 10px 2px;
+        transition: transform 0.2s;
+    }
+
+    .extra-images:hover {
+        transform: scale(1.1);
+    }
+    
+
+.btn-img {
+    background-color: black;
+    padding: 2px;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.fa-magnifying-glass{
+    color: white;
+}
+
+.fa-trash-can {
+    color: gray;
+}
+
+.btn-img:hover, .fa-solid:hover {
+    color: rgb(185, 185, 185);
+    cursor: pointer;
+}
+
+.align {
+    vertical-align: middle;
+} 
+
+.components-left {
+    text-align: right;
+}
+
+.middle-text-container {
+    text-align: center ;
+}
+
+.shadow {
+    box-shadow: 0 0 0px 2px rgba(0,0,0,.05),0 4px 6px 0 rgba(0,0,0,.1),0 8px 24px 0 rgba(0,0,0, .1);
+}
+
+/* Text Sizes */
+
+.text-x-sm {
+    font-size: 0.6em;
+}
+
+.text-sm {
+    font-size: 0.8em;
+}
+
+.text-md {
+    font-size: 1.2em;
+}
+
+.text-lg {
+    font-size: 1.5rem;
+}
+
+.text-x-lg {
+    font-size: 2rem;
+}
+
+.text-letter-space {
+    letter-spacing: 1px;
+}
+
+
+/* Item CSS */
+#buy-form {
+    margin: 20px 0px 0px 0px
+}
+
+    #buy-form > button {
+        width: 150px;
+        background-color: #353148;
+        border-radius: 4px;
+        border: none;
+        color: rgb(185, 185, 185);
+        text-transform: uppercase;
+        transition: transform 0.2s;
+        margin-right: 10px;
+  
+    }
+
+    #buy-form > button:hover {
+      transform: scale(1.1);
+      color: white;
+      cursor: pointer;
+    }
+
+
+    #buy-form > select {
+        width: 200px;
+    }
+
+
+
+
+
+/* Desktop to Mobile */
+@media only screen and (max-width: 480px) {
+   .sm {
+        max-width: 600px;
+   }
+
+   .sm-container {
+       margin-top: 10px;
+   }
+  
+}
+
+@media only screen and (min-width: 481px) {
+    .md {
+        min-width: 481px;
+    }
+
+    .md-container {
+        margin-top: 10px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1024px) {
+  
+    .lg-container {
+        margin-top: 0;
+
+    }
+}
+
