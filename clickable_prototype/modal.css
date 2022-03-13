@@ -1,0 +1,214 @@
+select option:hover {
+    background-color: #b11515;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+    background-image: url(sample2.jpg);
+}
+
+.modal-header {
+    background-color: black;
+    padding: 15px;
+}
+
+.modal-header > h2 {
+    display: inline-block;
+    color: white;
+}
+
+.modal-body {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.modal-body > form > select > option >  div > button {
+    transform: rotate(120deg);
+}
+
+.modal-body > form > label[for="add-category"] {
+  margin-top: 8px;
+}
+
+
+
+.modal-footer {
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+.close-btn-container {
+    display: inline-block;
+    min-width: calc(100% - 233px);
+    text-align: right;
+}
+.close-btn {
+    color: white;
+    font-size: 30px;
+    height: 10px;
+}
+
+.close-btn:hover 
+, .close-btn:focus{
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.btn-edit {
+    transform: rotate(120deg);
+    width: auto;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    vertical-align: middle;
+}
+
+
+.select {
+    display: block;
+    margin: 10px 10px 10px 7em;
+    font-size: 1.3rem;
+}
+
+  .select ul {
+        width: 382px;
+        border: 1px solid black;
+        border-radius: 2px;
+  }
+  
+  .select ul li.option:hover {
+    background-color: whitesmoke;
+  }
+  
+  .select ul li.option {
+    z-index: 1;
+    padding: 5px;
+    display: none;
+    list-style: none;
+  }
+  
+  .select ul li:first-child {
+    display: block;
+  }
+  
+  .select ul li {
+    cursor: default;
+  }
+  
+  .options-area {
+      float: right;
+      text-align: right;
+      vertical-align: top;
+  }
+
+  .options-area > button {
+     margin: 0px 6px;
+  }
+
+  .fa-pencil {
+    color: gray;
+  }
+
+#sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 50%;
+    width: 60%;
+    margin: 0px auto;
+    position: relative;
+    left: 27px;
+    border: 1px solid grey;
+    padding: 7px;
+}
+
+    #sortable li {
+        padding: 5px;
+        background-color: white;
+    }
+
+
+    #sortable li div > #btnDelete {
+        display: none;
+    }
+
+    #sortable li:hover div > #btnDelete {
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .fa-bars {
+        vertical-align: middle;
+    }
+
+    #sortable li div {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px;
+    }
+
+  
+
+
+    #btnDelete {
+        vertical-align: middle;
+        margin: 10px;
+    }
+
+
+    #sortable li div img {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        vertical-align: middle;
+    }
+
+    #sortable li div p {
+        display: inline-block;
+
+    }
+
+    #sortable li div label{
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    #sortable li div label > input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+
+
+
+ 
+
+
+ 
+
+
+@keyframes modalopen {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

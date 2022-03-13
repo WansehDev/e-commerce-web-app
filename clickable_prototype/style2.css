@@ -25,11 +25,17 @@
     vertical-align: top;
 }
 
-    .form-fields-default input[type="text"],.form-fields-default input[type="email"], .form-fields-default input[type="password"] {
+    .form-fields-default input[type="text"],.form-fields-default input[type="email"], .form-fields-default input[type="password"], .form-fields-default input[type="file"],.form-fields-default textarea, .form-fields-default select{
         display: block;
         margin: 10px 10px 10px 7em;
         font-size: 1.3rem;
         padding: 2px;
+    }
+
+    .form-fields-default select {
+        width: 382px;
+        min-width: auto;
+
     }
 
     .form-fields-default label {
@@ -140,28 +146,38 @@
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
+    width: auto;
 }
 
     .btn-default:hover {
         background-color: #575175;
         cursor: pointer;
     }
+
 .btn-margin {
     margin: 20px 0px;
 }
 
 .btn-update:hover {
-    background-color: lightcoral;
-    color: black;
-    cursor: pointer;
-}
-
-.btn-delete:hover {
     background-color: lightgreen;
     color: black;
     cursor: pointer;
 }
 
+.btn-delete:hover {
+    background-color: lightcoral;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-lightgreen:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+.btn-dodgerblue:hover {
+    background-color: dodgerblue;
+}
 
 
 
